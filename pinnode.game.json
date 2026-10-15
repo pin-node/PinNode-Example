@@ -6,7 +6,7 @@
   "title": "pin-node-example",
   "name": "PinNode Example (RPU template)",
   "repo": "pin-node/pin-node-example",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scoringVersion": 1,
   "platform": "bally-35"
  },

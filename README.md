@@ -120,18 +120,14 @@ or `PINNODE_STAT_MAX`.
 
 ## Building
 
-Install the **PinNode** Arduino library from
-[github.com/pin-node/PinNode](https://github.com/pin-node/PinNode) (Code → Download
-ZIP, then in the Arduino IDE Sketch → Include Library → Add .ZIP Library).
-
-The **RPUMachines** library, from
-[github.com/pin-node/RPUMachines](https://github.com/pin-node/RPUMachines), is only
-needed for the Star Trek option (`MACHINE_BALLY_STAR_TREK` in `RPU_Config.h`).
-Install it the same way.
+Install PinNode: Tools → Manage Libraries…, search PinNode, Install. For the
+Bally Star Trek option (`MACHINE_BALLY_STAR_TREK` in `RPU_Config.h`), also install
+RPUMachines the same way.
 
 From the command line:
 
 ```bash
+arduino-cli lib install PinNode            # and RPUMachines for the Star Trek option
 arduino-cli compile -b arduino:avr:mega:cpu=atmega2560 .
 ```
 
