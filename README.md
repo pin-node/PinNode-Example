@@ -10,6 +10,10 @@ menus, and every step of it reported to the node.
 It is a "nothing game" on purpose. Copy it, change the machine definitions, and
 build your rules into the places marked `CUSTOMIZATION TODO`.
 
+The sketch is the `pin-node-example/` folder: open
+`pin-node-example/pin-node-example.ino` in the Arduino IDE. Every file named
+below is in that folder.
+
 Hardware: RPU Rev 4 (or Rev 102) with a Mega 2560 Pro, and an ESP32 running the
 PinNode node firmware in the board's WiFi socket. Sound is a WAV Trigger.
 
@@ -104,6 +108,7 @@ From the command line (or in CI), `pinnode-gen` from the PinNode library
 ([github.com/pin-node/PinNode](https://github.com/pin-node/PinNode)) does the same:
 
 ```bash
+cd pin-node-example
 pinnode-gen check pinnode.game.json       # validate
 pinnode-gen generate pinnode.game.json    # rewrite PinNodeGame.h
 ```
@@ -128,10 +133,12 @@ From the command line:
 
 ```bash
 arduino-cli lib install PinNode            # and RPUMachines for the Star Trek option
-arduino-cli compile -b arduino:avr:mega:cpu=atmega2560 .
+arduino-cli compile -b arduino:avr:mega:cpu=atmega2560 pin-node-example
 ```
 
-The sketch folder must be called `pin-node-example` (it has to match the `.ino`).
+If you copy the sketch elsewhere, its folder must still be called `pin-node-example`
+(Arduino needs the folder and the `.ino` to have the same name). To rename your game,
+rename both.
 
 RPU board schematics: see [RetroPinUpgrade](https://github.com/RetroPinUpgrade) on GitHub.
 
