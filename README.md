@@ -81,7 +81,7 @@ build it for a machine, turn on that machine's define in `RPU_Config.h`:
 ```
 
 Its lamps, switches and solenoids then come from the **RPUMachines** library
-([github.com/pin-node/RPUMachines](https://github.com/pin-node/RPUMachines)), and the nothing game serves from the outhole
+([github.com/wifijt/RPUMachines](https://github.com/wifijt/RPUMachines)), and the nothing game serves from the outhole
 kicker, fires each bumper and slingshot from its own switch, resets the one bank
 of four drop targets, and numbers the solenoid test by coil number. Don't run
 the unselected build on a real machine: its "serve ball" is another machine's

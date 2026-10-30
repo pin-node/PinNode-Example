@@ -3749,6 +3749,7 @@ void loop() {
               : inGame ? PINNODE_MODE_GAME : PINNODE_MODE_ATTRACT;
     // (during the match sequence the ball number has already moved past the last ball)
     PinNodeCtrl_Mode(mode, inGame ? ((CurrentBallInPlay > BallsPerGame) ? BallsPerGame : CurrentBallInPlay) : 0, inGame ? CurrentPlayer + 1 : 0);
+    PinNodeCtrl_Scores(CurrentScores, CurrentNumPlayers);   // live scores for phones at the machine
   }
   // Credits added from the app (the owner's "Add credit"): in attract only, the game's own
   // way (saved, shown, coin lockout), and never past the maximum.

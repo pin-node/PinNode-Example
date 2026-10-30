@@ -4,8 +4,8 @@
 #include <PinNode.h>
 
 #define PINNODE_RULESET_ID      "pin-node-example"
-#define PINNODE_RULESET_VERSION "0.1.3"
-#define PINNODE_MANIFEST_HASH   "47fd69a31f3d67af"
+#define PINNODE_RULESET_VERSION "0.1.4"
+#define PINNODE_MANIFEST_HASH   "d5ce99011b968c2e"
 #define PINNODE_SCORING_VERSION 1
 
 enum : uint8_t {   // achievements
